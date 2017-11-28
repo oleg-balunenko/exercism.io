@@ -1,0 +1,3 @@
+[submodule "go/gigasecond"]
+	path = go/gigasecond
+	url = https://github.com/oleg-balunenko/gigasecond.git
