@@ -5,11 +5,32 @@
 // https://golang.org/doc/effective_go.html#commentary
 package bob
 
+import (
+	"strings"
+)
+
+
+
 // Hey should have a comment documenting it.
 func Hey(remark string) string {
-	// Write some code here to pass the test suite.
-	// Then remove all the stock comments.
-	// They're here to help you get started but they only clutter a finished solution.
-	// If you leave them in, reviewers may protest!
-	return ""
+
+	strings.ContainsAny(remark, "?")
+
+	switch remark {
+
+
+
+	case "question?":
+		return "Sure"
+	case "Yell (uppercase)":
+		return "Whoa, chill out!"
+	case "yell question? (uppercase with?)":
+		return "Calm down, I know what I'm doing!"
+	case "":
+		return "Fine. Be that way!"
+	default:
+		return "Whatever."
+
+
+	}
 }
