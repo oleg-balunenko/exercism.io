@@ -1,13 +1,10 @@
 package main
 
 import (
-	"time"
-
-	"github.com/oleg-balunenko/exercism.io/go/gigasecond"
+	"github.com/oleg-balunenko/exercism.io/go/bob"
 )
 
 func main() {
-
-	gigasecond.AddGigasecond(time.Now())
+	bob.Hey("Hello World?")
 
 }
